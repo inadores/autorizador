@@ -1,0 +1,19 @@
+{
+    "name": "inadores/autorizador",
+    "description": "conprobar, permitir y restringir el acceso de usuarios a los controladores",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Inadores\\Autorizador\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andres Patiño",
+            "email": "andres.p.e.nascar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

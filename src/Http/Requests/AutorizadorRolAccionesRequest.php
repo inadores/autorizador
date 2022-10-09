@@ -1,0 +1,30 @@
+<?php
+
+namespace Inadores\Autorizador\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class AutorizadorRolAccionesRequest extends FormRequest
+{
+    /**
+     * funcion sin uso
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * reglas de validacion
+     *
+     * @return array<string, mixed>
+     */
+    public function rules()
+    {
+        return [
+            'rol_id' => 'required|numeric',
+            'accion' => 'required|string|max:255'
+        ];
+    }
+}
